@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Satisfy&display=swap");
+
+:root {
+  /* colors */
+  --main-color: #3880e5;
+  --dark-color: #052f5f;
+  --black: #222222;
+  --parag-color: #666666;
+  --border-color: #6666662a;
+
+  /* font */
+  --global-font: "Rubik", sans-serif;
+  --subtitle-font: "Satisfy", cursive;
+  --parag-font: "Jost", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: var(--global-font);
+}
+
+*::selection {
+  background-color: var(--dark-color);
+  color: #fff;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+@media (max-width: 1500px) {
+  .container {
+    width: 90%;
+  }
+}
+
+/* start header */
+header .top-header {
+  padding: 15px 0;
+  background-color: var(--dark-color);
+  color: #fff;
+}
+
+header .top-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .top-header hr {
+  width: 20px;
+  transform: rotate(90deg);
+}
+
+header .top-header .header_email {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+header .top-header .header_email i {
+  font-size: 25px;
+  color: #a2c2ee;
+}
+
+header .top-header .header_email .content h5 {
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #a2c2ee;
+}
+
+header .top-header .header_email .content h6 {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+header .top-header p {
+  font-size: 14px;
+}
+
+header .top-header p span {
+  font-weight: 500;
+  text-decoration: underline;
+  color: #a2c2ee;
+}
+
+header .top-header .social_link {
+  display: flex;
+  gap: 10px;
+}
+
+header .top-header .social_link a {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease-in-out;
+}
+
+header .top-header .social_link a i {
+  font-size: 14px;
+}
+
+header .top-header .social_link a:hover {
+  border-color: #a2c2ee;
+  color: #a2c2ee;
+  transform: scale(1.1);
+}
+
+header .main_header {
+  padding: 10px 0;
+  background-color: #fff;
+}
+
+header .main_header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .main_header a {
+  display: flex;
+  align-items: center;
+}
+
+header .main_header .phone_btn {
+  gap: 10px;
+}
+
+header .main_header .logo img {
+  width: 50px;
+}
+
+header .main_header .logo h1 {
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-style: italic;
+  color: var(--main-color);
+}
+
+header .main_header nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+header .main_header nav ul li {
+  font-size: 15px;
+  color: var(--dark-color);
+  transition: 0.3s ease-in-out;
+}
+
+header .main_header nav ul li::first-letter {
+  text-transform: capitalize;
+}
+
+header .main_header nav ul li:hover,
+header .main_header nav ul li.active {
+  color: var(--main-color);
+}
+
+header .main_header nav ul li:hover {
+  transform: scale(1.1);
+}
+
+header .main_header .phone_btn {
+  padding: 10px 20px;
+  background-color: var(--main-color);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: capitalize;
+  border: 1px solid var(--main-color);
+  border-radius: 30px;
+  transition: 0.3s ease-in-out;
+}
+
+header .main_header .phone_btn i {
+  font-size: 16px;
+}
+
+header .main_header .phone_btn:hover {
+  background-color: transparent;
+  border-color: var(--dark-color);
+  color: var(--dark-color);
+}
+/* end header */
+
+
