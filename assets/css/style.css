@@ -90,6 +90,7 @@ header .top-header .header_email .content h6 {
 }
 
 header .top-header p {
+  color: #fff;
   font-size: 14px;
 }
 
@@ -321,6 +322,11 @@ header .main_header .phone_btn:hover {
   color: var(--dark-color);
 }
 
+.sec_title p {
+  text-align: center;
+  width: 80%;
+}
+
 .features_sec .features {
   display: flex;
   justify-content: space-between;
@@ -367,3 +373,379 @@ header .main_header .phone_btn:hover {
 }
 
 /* end features_sec */
+
+/* start populaire_sec */
+.populaire_sec {
+  padding: 40px 0;
+}
+
+.populaire_sec .populaire-swp{
+  overflow: hidden;
+}
+
+.populaire_sec .destinations {
+  margin: 20px 0;
+}
+
+.populaire_sec .destinations .single_destination {
+  width: 33%;
+  background-color: #fff;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 10px 15px 20px #94949428;
+}
+
+.populaire_sec .destinations .single_destination .destination_img {
+  width: 100%;
+  overflow: hidden;
+}
+
+.populaire_sec .destinations .single_destination .destination_img img {
+  width: 100%;
+  transform: scale(1.05);
+  transition: 0.3s ease-in-out;
+}
+
+.populaire_sec .destinations .single_destination .destination_img img:hover {
+  transform: scale(1.1);
+}
+
+.populaire_sec .destinations .single_destination .destination_info {
+  display: flex;
+}
+
+.populaire_sec .destinations .single_destination .destination_info .single_info {
+  width: calc(100% / 3);
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.populaire_sec .destinations .single_destination .destination_info .single_info:nth-child(2) {
+  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+}
+
+.populaire_sec .destinations .single_destination .destination_info .single_info i {
+  font-size: 16px;
+  color: var(--main-color);
+}
+
+.populaire_sec .destinations .single_destination .destination_info .single_info span {
+  font-size: 14px;
+  color: var(--parag-color);
+  text-transform: capitalize;
+}
+
+.populaire_sec .destinations .single_destination .content {
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.populaire_sec .destinations .single_destination .content .text {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  font-size: 14px;
+}
+
+.populaire_sec .destinations .single_destination .content .text p::first-letter {
+  text-transform: capitalize;
+}
+
+.populaire_sec .destinations .single_destination .content .text ul li {
+  display: flex;
+  gap: 3px;
+  align-items: center;
+  padding-left: 5px;
+}
+
+.populaire_sec .destinations .single_destination .content .text ul li i {
+  color: var(--main-color);
+}
+
+.populaire_sec .destinations .single_destination .content .bottom_card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.populaire_sec .destinations .single_destination .content .bottom_card .price_content p {
+  font-size: 14px;
+}
+
+.populaire_sec .destinations
+  .single_destination
+  .content
+  .bottom_card
+  .price_content
+  p::first-letter {
+  text-transform: capitalize;
+}
+
+.populaire_sec .destinations .single_destination .content .bottom_card .price_content .price {
+  display: flex;
+  gap: 5px;
+  align-items: flex-end;
+}
+
+.populaire_sec .destinations
+  .single_destination
+  .content
+  .bottom_card
+  .price_content
+  .price
+  h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--main-color);
+}
+
+.populaire_sec .destinations
+  .single_destination
+  .content
+  .bottom_card
+  .price_content
+  .price
+  h5 {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--dark-color);
+  text-decoration: line-through;
+}
+
+.populaire_sec .destinations .single_destination .content .bottom_card .book {
+  padding: 10px 15px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  font-size: 14px;
+  text-transform: capitalize;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: var(--main-color);
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.populaire_sec .destinations .single_destination .content .bottom_card .book i {
+  font-size: 16px;
+}
+
+.populaire_sec .destinations .single_destination .content .bottom_card .book:hover {
+  background-color: var(--dark-color);
+}
+/* end populaire_sec */
+
+/* start modal */
+.modal_sec .background_modal {
+  display: none;
+}
+
+.modal_sec .background_modal.active {
+  display: block;
+}
+
+.modal_sec .background_modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #6666664b;
+  z-index: 99;
+}
+
+.modal_sec .modal {
+  position: fixed;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  background-color: #fff;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+  z-index: 100;
+}
+
+.modal_sec .modal.active {
+  top: 40px;
+}
+
+.modal_sec .modal .top_modal {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.modal_sec .modal .top_modal h1 {
+  font-size: 30px;
+  color: var(--dark-color);
+  text-transform: capitalize;
+}
+
+.modal_sec .modal .top_modal i {
+  font-size: 25px;
+  color: var(--dark-color);
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.modal_sec .modal .top_modal i:hover {
+  color: var(--main-color);
+  transform: rotate(180deg);
+}
+
+.modal_sec .modal .main_form {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.modal_sec .modal .main_form .row_two_input .single_input,
+.modal_sec .modal .main_form .row_one_input {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.modal_sec .modal .main_form .row_two_input {
+  display: flex;
+  gap: 10px;
+}
+
+.modal_sec .modal .main_form .row_two_input .single_input {
+  width: 50%;
+}
+
+.modal_sec .modal .main_form label {
+  font-family: var(--parag-font);
+  color: var(--parag-color);
+}
+
+.modal_sec .modal .main_form label::first-letter {
+  text-transform: capitalize;
+}
+
+.modal_sec .modal .main_form select,
+.modal_sec .modal .main_form .radio_btn input[type="number"],
+.modal_sec .modal .main_form input[type="email"],
+.modal_sec .modal .main_form input[type="tel"],
+.modal_sec .modal .main_form input[type="text"] {
+  padding: 7px 10px;
+  border: 1px solid var(--parag-color);
+  border-radius: 5px;
+  outline: none;
+}
+
+.modal_sec .modal .main_form select::placeholder,
+.modal_sec .modal .main_form .radio_btn input[type="number"]::placeholder,
+.modal_sec .modal .main_form input[type="email"]::placeholder,
+.modal_sec .modal .main_form input[type="tel"]::placeholder,
+.modal_sec .modal .main_form input[type="text"]::placeholder {
+  font-family: var(--parag-font);
+  text-transform: capitalize;
+}
+
+.modal_sec .modal .main_form select:focus,
+.modal_sec .modal .main_form .radio_btn input[type="number"]:focus,
+.modal_sec .modal .main_form input[type="email"]:focus,
+.modal_sec .modal .main_form input[type="tel"]:focus,
+.modal_sec .modal .main_form input[type="text"]:focus {
+  border-color: var(--main-color);
+}
+
+.modal_sec .modal .main_form select:focus,
+.modal_sec .modal .main_form .radio_btn input[type="number"]:focus::placeholder,
+.modal_sec .modal .main_form input[type="email"]:focus::placeholder,
+.modal_sec .modal .main_form input[type="tel"]:focus::placeholder,
+.modal_sec .modal .main_form input[type="text"]:focus::placeholder {
+  color: var(--main-color);
+}
+
+.modal_sec .modal .main_form select{
+  text-transform: capitalize;
+  color: var(--parag-color);
+}
+
+.modal_sec .modal .main_form .radio_btn {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin: auto 0;
+}
+
+.modal_sec .modal .main_form .radio_btn .single_radio {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.modal_sec .modal .main_form .radio_btn label {
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.modal_sec .modal .main_form .radio_btn label,
+.modal_sec .modal .main_form .radio_btn input[type="radio"] {
+  cursor: pointer;
+}
+
+
+.modal_sec .modal .main_form .radio_btn input[type="number"] {
+  display: none;
+}
+
+.modal_sec .modal .main_form .radio_btn input[type="number"].active {
+  width: 80px;
+  display: block;
+}
+
+.modal_sec .modal .bottom_modal {
+  padding: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.modal_sec .modal .bottom_modal button {
+  padding: 10px 15px;
+  font-size: 14px;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.modal_sec .modal .bottom_modal button[type="submit"] {
+  background-color: var(--dark-color);
+}
+
+.modal_sec .modal .bottom_modal button[type="reset"] {
+  background-color: var(--main-color);
+}
+
+.modal_sec .modal .bottom_modal button[type="submit"]:hover {
+  background-color: #001936;
+}
+
+.modal_sec .modal .bottom_modal button[type="reset"]:hover {
+  background-color: rgb(54, 114, 197);
+}
+
+/* end modal */
