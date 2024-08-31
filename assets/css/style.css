@@ -196,4 +196,76 @@ header .main_header .phone_btn:hover {
 }
 /* end header */
 
+/* start hero-sec */
+.hero-sec {
+  position: relative;
+  height: 580px;
+}
 
+.hero-sec video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-sec .background_video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #052f5f49;
+}
+
+.hero-sec .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.hero-sec .content h4 {
+  padding: 5px 20px;
+  font-size: 18px;
+  font-family: var(--subtitle-font);
+  background-color: var(--dark-color);
+  color: #fff;
+  border-radius: 30px 0 30px 0;
+}
+
+.hero-sec .content h1 {
+  font-size: 30px;
+  text-transform: capitalize;
+  color: var(--dark-color);
+}
+
+.hero-sec .content p {
+  font-size: 16px;
+  font-family: var(--parag-font);
+  text-align: center;
+  color: #fff;
+}
+
+.hero-sec .content a {
+  padding: 10px 20px;
+  background-color: var(--dark-color);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: capitalize;
+  border-radius: 30px;
+  transition: 0.3s ease-in-out;
+}
+
+.hero-sec .content a:hover{
+    background-color: var(--main-color);
+}
+
+/* end hero-sec */
