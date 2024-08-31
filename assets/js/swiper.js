@@ -10,13 +10,10 @@ var swiper = new Swiper(".populaire-swp ", {
       delay:2500,
     },
     breakpoints: {
-      1500: {
-        slidesPerView: 4,
-      },
       1200: {
         slidesPerView: 3,
       },
-      700: {
+      775: {
         slidesPerView: 2,
         spaceBetween: 15,
       },
