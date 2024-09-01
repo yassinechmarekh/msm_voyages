@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MSM Voyages - Votre agence de voyage</title>
+
+    <!-- website icon -->
+    <link rel="icon" href="assets/images/logo/icon.png" />
+
+    <!-- link to file css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- font aewsome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="loader-container">
+      <span class="loader"></span>
+    </div>
+
+    <header>
+      <div class="top-header">
+        <div class="container">
+          <div class="header_email">
+            <i class="fa-solid fa-paper-plane"></i>
+            <div class="content">
+              <h5>email :</h5>
+              <h6>msmvoyages@info.com</h6>
+            </div>
+          </div>
+
+          <hr />
+
+          <p>Bienvenue sur votre agence de voyage <span>MSM Voyages</span> !</p>
+
+          <hr />
+
+          <ul class="social_link">
+            <a href="#"
+              ><li><i class="fa-brands fa-facebook"></i></li
+            ></a>
+            <a href="#"
+              ><li><i class="fa-brands fa-instagram"></i></li
+            ></a>
+            <a href="#"
+              ><li><i class="fa-brands fa-youtube"></i></li
+            ></a>
+            <a href="#"
+              ><li><i class="fa-brands fa-x-twitter"></i></li
+            ></a>
+          </ul>
+        </div>
+      </div>
+
+      <div class="main_header">
+        <div class="container">
+          <a href="#" class="logo">
+            <img src="assets/images/logo/logo.png" alt="" />
+            <h1>MSM voyages</h1>
+          </a>
+
+          <div class="bg_menu" onclick="close_menu()"></div>
+
+          <nav>
+            <div class="top_menu">
+              <a href="#" class="logo_menu">
+                <img src="assets/images/logo/logo.png" alt="" />
+                <h1>MSM Voyages</h1>
+              </a>
+
+              <i class="fa-solid fa-xmark" onclick="close_menu()"></i>
+            </div>
+            <div class="menu_phone">
+              <ul>
+                <a href="index.html"><li>accueil</li></a>
+                <a href="#"><li>a propos</li></a>
+                <a href="destinations.html"
+                  ><li class="active">destination</li></a
+                >
+                <a href="#"><li>gallery</li></a>
+                <a href="#"><li>contact</li></a>
+              </ul>
+              <div class="bottom_menu">
+                <span><i class="fa-solid fa-phone-volume"></i></span>
+                <div class="appeler">
+                  <h4>appeler</h4>
+                  <a href="#">+212 612 345 678</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+
+          <a href="#" class="phone_btn">
+            <i class="fa-solid fa-phone-volume"></i>
+            <span>appeler</span>
+          </a>
+
+          <i class="fa-solid fa-bars open_menu" onclick="open_menu()"></i>
+        </div>
+      </div>
+    </header>
+
+    <section class="top_page">
+      <div class="content">
+        <h1 class="title_page">destionations</h1>
+        <div class="links_top_page">
+          <a href="#"><h3>accueil</h3></a>
+          <i class="fa-solid fa-arrow-right"></i>
+          <h3>destionations</h3>
+        </div>
+      </div>
+    </section>
+
+    <section class="main_destionations_sec">
+      <div class="container">
+        <div class="sec_title">
+          <div class="subtitle">
+            <img src="assets/images/subtitle/left-subtitle.svg" alt="" />
+            <h3>Nos destinations</h3>
+            <img src="assets/images/subtitle/right-subtitle.svg" alt="" />
+          </div>
+          <h1>Découvrez toutes nos destinations</h1>
+          <p>
+            Partez à l'aventure avec notre sélection de destinations variées à
+            travers le globe. Que vous soyez à la recherche de plages
+            ensoleillées, de métropoles animées, de montagnes majestueuses, ou
+            de villages pittoresques, notre gamme de destinations vous offre des
+            options pour chaque type de voyageur. Plongez dans une expérience
+            culturelle unique, explorez des paysages incroyables, et créez des
+            souvenirs inoubliables avec nos propositions de voyages.
+          </p>
+        </div>
+
+        <div class="main_destionations">
+          <div class="single_destination">
+            <div class="destination_img">
+              <img src="assets/images/destinations/tour-de-nord.jpg" alt="" />
+            </div>
+            <div class="destination_info">
+              <div class="single_info">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>tour de nord</span>
+              </div>
+
+              <div class="single_info">
+                <i class="fa-solid fa-calendar-days"></i>
+                <span>7 jours</span>
+              </div>
+
+              <div class="single_info">
+                <i class="fa-solid fa-moon"></i>
+                <span>6 nuits</span>
+              </div>
+            </div>
+            <div class="content">
+              <div class="text">
+                <p>programme :</p>
+                <ul>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <p>Al hoceima - Parasailing - Aqua Park Alpamare</p>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <p>Nador - Quemado - Matadero - Sefia</p>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <p>Plongée Sous Marine - Jebha - Mers</p>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <p>Eddar - Playa Monica - Dalia - Oued Laou</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="bottom_card">
+                <div class="price_content">
+                  <p>à partir de :</p>
+                  <div class="price">
+                    <h3>3 199 Dhs</h3>
+                    <h5 class="old_price">3 900 Dhs</h5>
+                  </div>
+                </div>
+                <button class="book" onclick="active_modal()">
+                  <i class="fa-solid fa-plane"></i>
+                  <span>réserver</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="single_destination">
+            <div class="destination_img">
+              <img src="assets/images/destinations/package-1.jpg" alt="" />
+            </div>
+            <div class="destination_info">
+              <div class="single_info">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>bali</span>
+              </div>
+
+              <div class="single_info">
+                <i class="fa-solid fa-calendar-days"></i>
+                <span>3 jours</span>
+              </div>
+
+              <div class="single_info">
+                <i class="fa-solid fa-moon"></i>
+                <span>2 nuits</span>
+              </div>
+            </div>
+            <div class="content">
+              <div class="text">
+                <p>programme :</p>
+                <ul>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <p>3 Nuits a Kuala Lumpur avec petit déjeuner</p>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <p>4 Nuits a Ubud avec petit déjeuner</p>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <p>2 Nuits a Seminyak avec petit déjeuner</p>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <p>3 Nuits Uluwatu avec petit déjeuner</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="bottom_card">
+                <div class="price_content">
+                  <p>à partir de :</p>
+                  <div class="price">
+                    <h3>19 900 Dhs</h3>
+                  </div>
+                </div>
+                <button class="book" onclick="active_modal()">
+                  <i class="fa-solid fa-plane"></i>
+                  <span>réserver</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="single_destination">
+            <div class="destination_img">
+              <img src="assets/images/destinations/agadir.jpg" alt="" />
+            </div>
+            <div class="destination_info">
+              <div class="single_info">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>agadir</span>
+              </div>
+
+              <div class="single_info">
+                <i class="fa-solid fa-calendar-days"></i>
+                <span>4 jours</span>
+              </div>
+
+              <div class="single_info">
+                <i class="fa-solid fa-moon"></i>
+                <span>3 nuits</span>
+              </div>
+            </div>
+            <div class="content">
+              <div class="text">
+                <p>programme :</p>
+                <ul>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <p>Essaouira - Agadir - Timlalin Tamri</p>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <p>Taghazout / Equitation / Karting</p>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <p>Quad / Balade Bateaux</p>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <p>Dates : 19-21 juillet, 26-28 juillet.</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="bottom_card">
+                <div class="price_content">
+                  <p>à partir de :</p>
+                  <div class="price">
+                    <h3>1 490 Dhs</h3>
+                    <h5 class="old_price">1 990 Dhs</h5>
+                  </div>
+                </div>
+                <button class="book" onclick="active_modal()">
+                  <i class="fa-solid fa-plane"></i>
+                  <span>réserver</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="single_destination">
+            <div class="destination_img">
+              <img src="assets/images/destinations/intanbul.jpg" alt="" />
+            </div>
+            <div class="destination_info">
+              <div class="single_info">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Istanboul</span>
+              </div>
+
+              <div class="single_info">
+                <i class="fa-solid fa-calendar-days"></i>
+                <span>8 jours</span>
+              </div>
+
+              <div class="single_info">
+                <i class="fa-solid fa-moon"></i>
+                <span>7 nuits</span>
+              </div>
+            </div>
+            <div class="content">
+              <div class="text">
+                <p>programme :</p>
+                <ul>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <p>Guide Touristique arabophone</p>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <p>Départ à l’aéroport Med V de Casablanca</p>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <p>Vol A/R avec La ram - Turkish Airlines - Airarabia</p>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <p>11 excursions extra - dans 3 jours</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="bottom_card">
+                <div class="price_content">
+                  <p>à partir de :</p>
+                  <div class="price">
+                    <h3>9 980 Dhs</h3>
+                    <h5 class="old_price">10 900 Dhs</h5>
+                  </div>
+                </div>
+                <button class="book" onclick="active_modal()">
+                  <i class="fa-solid fa-plane"></i>
+                  <span>réserver</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="single_destination">
+            <div class="destination_img">
+              <img src="assets/images/destinations/taghazout.jpg" alt="" />
+            </div>
+            <div class="destination_info">
+              <div class="single_info">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>taghazout</span>
+              </div>
+
+              <div class="single_info">
+                <i class="fa-solid fa-calendar-days"></i>
+                <span>2 jours</span>
+              </div>
+
+              <div class="single_info">
+                <i class="fa-solid fa-moon"></i>
+                <span>1 nuits</span>
+              </div>
+            </div>
+            <div class="content">
+              <div class="text">
+                <p>Informations :</p>
+                <ul>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <p>Ce programme est parmi les meilleurs.</p>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <p>Classé six ans comme meilleur été.</p>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <p>Voyage : départ vendredi, retour dimanche.</p>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <p>Dates : 19-21 juillet, 26-28 juillet.</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="bottom_card">
+                <div class="price_content">
+                  <p>à partir de :</p>
+                  <div class="price">
+                    <h3>780 Dhs</h3>
+                  </div>
+                </div>
+                <button class="book" onclick="active_modal()">
+                  <i class="fa-solid fa-plane"></i>
+                  <span>réserver</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="single_destination">
+            <div class="destination_img">
+              <img src="assets/images/destinations/tour-de-sud.jpg" alt="" />
+            </div>
+            <div class="destination_info">
+              <div class="single_info">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>tour de sud</span>
+              </div>
+
+              <div class="single_info">
+                <i class="fa-solid fa-calendar-days"></i>
+                <span>6 jours</span>
+              </div>
+
+              <div class="single_info">
+                <i class="fa-solid fa-moon"></i>
+                <span>5 nuits</span>
+              </div>
+            </div>
+            <div class="content">
+              <div class="text">
+                <p>programme :</p>
+                <ul>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <p>Glou - Le nid d’aigle- Parapente - Legzira</p>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <p>Tiznit - Agadir - Karting- Taghazout</p>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <p>Balade bateaux- Bamri - Bimlaline</p>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <p>Essaouira - Équitation</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="bottom_card">
+                <div class="price_content">
+                  <p>à partir de :</p>
+                  <div class="price">
+                    <h3>2890 Dhs</h3>
+                  </div>
+                </div>
+                <button class="book" onclick="active_modal()">
+                  <i class="fa-solid fa-plane"></i>
+                  <span>réserver</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="single_destination">
+            <div class="destination_img">
+              <img src="assets/images/destinations/jebha.jpg" alt="" />
+            </div>
+            <div class="destination_info">
+              <div class="single_info">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>jebha</span>
+              </div>
+
+              <div class="single_info">
+                <i class="fa-solid fa-calendar-days"></i>
+                <span>2 jours</span>
+              </div>
+
+              <div class="single_info">
+                <i class="fa-solid fa-moon"></i>
+                <span>1 nuit</span>
+              </div>
+            </div>
+            <div class="content">
+              <div class="text">
+                <p>programme :</p>
+                <ul>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <p>Jebha / Mers Eddar / Playa Monica</p>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <p>Dalia / Oued Laou / Tanger</p>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <p>Voyage : Départ Vendredi, Retour Dimanche.</p>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <p>Pour Juillet, Août, Septembre, Octobre 2024.</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="bottom_card">
+                <div class="price_content">
+                  <p>à partir de :</p>
+                  <div class="price">
+                    <h3>749 Dhs</h3>
+                  </div>
+                </div>
+                <button class="book" onclick="active_modal()">
+                  <i class="fa-solid fa-plane"></i>
+                  <span>réserver</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="single_destination">
+            <div class="destination_img">
+              <img src="assets/images/destinations/saidia.jpg" alt="" />
+            </div>
+            <div class="destination_info">
+              <div class="single_info">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>saidia</span>
+              </div>
+
+              <div class="single_info">
+                <i class="fa-solid fa-calendar-days"></i>
+                <span>3 jours</span>
+              </div>
+
+              <div class="single_info">
+                <i class="fa-solid fa-moon"></i>
+                <span>2 nuits</span>
+              </div>
+            </div>
+            <div class="content">
+              <div class="text">
+                <p>programme :</p>
+                <ul>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <p>Saïdia - Carablanca - Hoceima</p>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <p>Nador - Parasailing Balade Bateaux</p>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <p>Plongée - Soirée</p>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <p>Dates : 19-21 juillet, 26-28 juillet.</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="bottom_card">
+                <div class="price_content">
+                  <p>à partir de :</p>
+                  <div class="price">
+                    <h3>1 390 Dhs</h3>
+                    <h5 class="old_price">1 750 Dhs</h5>
+                  </div>
+                </div>
+                <button class="book" onclick="active_modal()">
+                  <i class="fa-solid fa-plane"></i>
+                  <span>réserver</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="single_destination">
+            <div class="destination_img">
+              <img src="assets/images/destinations/tour-de-sud.jpg" alt="" />
+            </div>
+            <div class="destination_info">
+              <div class="single_info">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>tour de sud</span>
+              </div>
+
+              <div class="single_info">
+                <i class="fa-solid fa-calendar-days"></i>
+                <span>6 jours</span>
+              </div>
+
+              <div class="single_info">
+                <i class="fa-solid fa-moon"></i>
+                <span>5 nuits</span>
+              </div>
+            </div>
+            <div class="content">
+              <div class="text">
+                <p>programme :</p>
+                <ul>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <p>Glou - Le nid d’aigle- Parapente - Legzira</p>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <p>Tiznit - Agadir - Karting- Taghazout</p>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <p>Balade bateaux- Bamri - Bimlaline</p>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <p>Essaouira - Équitation</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="bottom_card">
+                <div class="price_content">
+                  <p>à partir de :</p>
+                  <div class="price">
+                    <h3>2890 Dhs</h3>
+                  </div>
+                </div>
+                <button class="book" onclick="active_modal()">
+                  <i class="fa-solid fa-plane"></i>
+                  <span>réserver</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="modal_sec">
+      <div class="background_modal" onclick="close_modal()"></div>
+      <div class="modal">
+        <form action="">
+          <div class="top_modal">
+            <h1>réservation</h1>
+            <i onclick="close_modal()" class="fa-solid fa-xmark"></i>
+          </div>
+          <div class="main_form">
+            <div class="row_two_input">
+              <div class="single_input">
+                <label for="lastname">nom</label>
+                <input
+                  type="text"
+                  id="lastname"
+                  placeholder="Votre Nom"
+                  autofocus
+                />
+              </div>
+              <div class="single_input">
+                <label for="firstname">prénom</label>
+                <input type="text" id="firstname" placeholder="Votre prénom" />
+              </div>
+            </div>
+            <div class="row_two_input">
+              <div class="single_input">
+                <label for="phone">téléphone</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  placeholder="Votre numéro de téléphone"
+                />
+              </div>
+              <div class="single_input">
+                <label for="email">email</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Votre adresse mail"
+                />
+              </div>
+            </div>
+            <div class="row_two_input">
+              <div class="single_input">
+                <label for="nationality">nationnalité</label>
+                <input
+                  type="text"
+                  id="nationality"
+                  placeholder="Votre Nationnalité"
+                />
+              </div>
+              <div class="single_input">
+                <label>nombre de place à réserver</label>
+                <div class="radio_btn">
+                  <div class="single_radio">
+                    <input type="radio" id="one" name="place_number" checked />
+                    <label for="one">1 place</label>
+                  </div>
+                  <div class="single_radio">
+                    <input type="radio" id="two" name="place_number" />
+                    <label for="two">2 places</label>
+                  </div>
+                  <div class="single_radio">
+                    <input type="radio" id="plus" name="place_number" />
+                    <label for="plus">plus</label>
+                    <input
+                      type="number"
+                      placeholder="Ex: 2"
+                      id="number_place"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row_one_input">
+              <label for="destination">choisissez votre destination</label>
+              <select name="destination" id="destination">
+                <option value="">selectionner votre destination</option>
+                <option value="bali">bali</option>
+              </select>
+            </div>
+          </div>
+          <div class="bottom_modal">
+            <button type="reset" onclick="close_modal()">annuler</button>
+            <button type="submit">confirmer</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="main_footer">
+          <div class="row">
+            <h1 class="title">MSM Voyages</h1>
+            <p>
+              MSM Voyages vous offre des expériences de voyage exceptionnelles
+              grâce à notre expertise et à notre service personnalisé. Découvrez
+              des destinations uniques, profitez d'offres exclusives et
+              laissez-nous vous guider dans vos aventures à travers le monde.
+            </p>
+          </div>
+
+          <div class="row">
+            <h1 class="title">Liens rapides</h1>
+            <ul class="fast_link">
+              <a href="#"
+                ><li>
+                  <i class="fa-solid fa-chevron-right"></i> <span>accueil</span>
+                </li></a
+              >
+              <a href="#"
+                ><li>
+                  <i class="fa-solid fa-chevron-right"></i>
+                  <span>a propos</span>
+                </li></a
+              >
+              <a href="#"
+                ><li>
+                  <i class="fa-solid fa-chevron-right"></i>
+                  <span>destination</span>
+                </li></a
+              >
+              <a href="#"
+                ><li>
+                  <i class="fa-solid fa-chevron-right"></i>
+                  <span>gallery</span>
+                </li></a
+              >
+              <a href="#"
+                ><li>
+                  <i class="fa-solid fa-chevron-right"></i> <span>contact</span>
+                </li></a
+              >
+            </ul>
+          </div>
+
+          <div class="row">
+            <h1 class="title">contact</h1>
+            <ul class="contact_list">
+              <li>
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Salé 11000, MAG 2 Rue Dafar 001</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-envelope"></i>
+                <span>msmvoyages@info.com</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-phone-volume"></i>
+                <span>+212 612 345 678</span>
+              </li>
+            </ul>
+            <ul class="contact_link">
+              <a href="#"
+                ><li><i class="fa-brands fa-facebook"></i></li
+              ></a>
+              <a href="#"
+                ><li><i class="fa-brands fa-instagram"></i></li
+              ></a>
+              <a href="#"
+                ><li><i class="fa-brands fa-youtube"></i></li
+              ></a>
+              <a href="#"
+                ><li><i class="fa-brands fa-x-twitter"></i></li
+              ></a>
+            </ul>
+          </div>
+
+          <div class="row">
+            <h1 class="title">gallery</h1>
+            <div class="footer_images">
+              <img src="assets/images/footer/1.jpg" alt="" />
+              <img src="assets/images/footer/2.jpg" alt="" />
+              <img src="assets/images/footer/3.jpg" alt="" />
+              <img src="assets/images/footer/4.jpg" alt="" />
+              <img src="assets/images/footer/5.jpg" alt="" />
+              <img src="assets/images/footer/6.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="bottom_footer">
+          <p>
+            &copy; <span>MSM Voyages</span>, All Right Reserved. Designed By
+            <a href="#">Yassine_ChM</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- link to files js -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
