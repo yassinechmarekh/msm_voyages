@@ -820,3 +820,135 @@ header .main_header .phone_btn:hover {
 }
 
 /* end offre_sec */
+
+/* start footer */
+footer {
+  background-color: var(--dark-color);
+}
+
+footer .main_footer {
+  padding: 40px 0 20px 0;
+  border-bottom: 1px solid #ffffff6a;
+  display: flex;
+  gap: 20px;
+}
+
+footer .main_footer .row {
+  width: calc(100% / 4);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+footer .main_footer .row .title {
+  font-size: 30px;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+footer .main_footer .row p {
+  font-family: var(--parag-font);
+  color: #ffffff9a;
+  font-size: 14px;
+}
+
+footer .main_footer .row ul {
+  font-size: 15px;
+  line-height: 1.6;
+  text-transform: capitalize;
+}
+
+footer .main_footer .row ul li {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  color: #ffffff9a;
+}
+
+footer .main_footer .row .fast_link a li i {
+  font-size: 9px;
+}
+
+footer .main_footer .row .contact_list li i {
+  font-size: 18px;
+}
+
+footer .main_footer .row .fast_link a li {
+  transition: 0.3s ease-in-out;
+}
+
+footer .main_footer .row .fast_link a li:hover {
+  color: var(--main-color);
+  transform: scale(1.05);
+  padding-left: 5px;
+}
+
+footer .main_footer .row .contact_list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+footer .main_footer .row .contact_link {
+  display: flex;
+  gap: 10px;
+}
+
+footer .main_footer .row .contact_link a li {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ffffff9a;
+  border-radius: 50%;
+  transition: 0.3s ease-in-out;
+}
+
+footer .main_footer .row .contact_link a li:hover {
+  color: var(--main-color);
+  border-color: var(--main-color);
+  transform: scale(1.1);
+}
+
+footer .main_footer .row .contact_link a li i {
+  font-size: 16px;
+}
+
+footer .main_footer .row .footer_images{
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+footer .main_footer .row .footer_images img {
+  width: 80px;
+  border: 3px solid #fff;
+}
+
+footer .bottom_footer {
+  padding: 10px 0;
+}
+
+footer .bottom_footer p {
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+}
+
+footer .bottom_footer p span {
+  color: #a2c2ee;
+  font-weight: 500;
+}
+
+footer .bottom_footer p a {
+  text-decoration: underline;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}
+
+footer .bottom_footer p a:hover {
+  color: #a2c2ee;
+}
+/* end footer */
