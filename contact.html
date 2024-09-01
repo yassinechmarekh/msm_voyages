@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MSM Voyages - Votre agence de voyage</title>
+
+    <!-- website icon -->
+    <link rel="icon" href="assets/images/logo/icon.png" />
+
+    <!-- link to file css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- font aewsome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="loader-container">
+      <span class="loader"></span>
+    </div>
+
+    <header>
+      <div class="top-header">
+        <div class="container">
+          <div class="header_email">
+            <i class="fa-solid fa-paper-plane"></i>
+            <div class="content">
+              <h5>email :</h5>
+              <h6>msmvoyages@info.com</h6>
+            </div>
+          </div>
+
+          <hr />
+
+          <p>Bienvenue sur votre agence de voyage <span>MSM Voyages</span> !</p>
+
+          <hr />
+
+          <ul class="social_link">
+            <a href="#"
+              ><li><i class="fa-brands fa-facebook"></i></li
+            ></a>
+            <a href="#"
+              ><li><i class="fa-brands fa-instagram"></i></li
+            ></a>
+            <a href="#"
+              ><li><i class="fa-brands fa-youtube"></i></li
+            ></a>
+            <a href="#"
+              ><li><i class="fa-brands fa-x-twitter"></i></li
+            ></a>
+          </ul>
+        </div>
+      </div>
+
+      <div class="main_header">
+        <div class="container">
+          <a href="#" class="logo">
+            <img src="assets/images/logo/logo.png" alt="" />
+            <h1>MSM voyages</h1>
+          </a>
+
+          <div class="bg_menu" onclick="close_menu()"></div>
+
+          <nav>
+            <div class="top_menu">
+              <a href="#" class="logo_menu">
+                <img src="assets/images/logo/logo.png" alt="" />
+                <h1>MSM Voyages</h1>
+              </a>
+
+              <i class="fa-solid fa-xmark" onclick="close_menu()"></i>
+            </div>
+            <div class="menu_phone">
+              <ul>
+                <a href="index.html"><li>accueil</li></a>
+                <a href="#"><li>a propos</li></a>
+                <a href="destinations.html"><li>destination</li></a>
+                <a href="#"><li>gallery</li></a>
+                <a href="contact.html"><li class="active">contact</li></a>
+              </ul>
+              <div class="bottom_menu">
+                <span><i class="fa-solid fa-phone-volume"></i></span>
+                <div class="appeler">
+                  <h4>appeler</h4>
+                  <a href="#">+212 612 345 678</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+
+          <a href="#" class="phone_btn">
+            <i class="fa-solid fa-phone-volume"></i>
+            <span>appeler</span>
+          </a>
+
+          <i class="fa-solid fa-bars open_menu" onclick="open_menu()"></i>
+        </div>
+      </div>
+    </header>
+
+    <section class="top_page">
+      <div class="content">
+        <h1 class="title_page">contact</h1>
+        <div class="links_top_page">
+          <a href="#"><h3>accueil</h3></a>
+          <i class="fa-solid fa-arrow-right"></i>
+          <h3>contact</h3>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact_sec">
+      <div class="container">
+        <div class="sec_title">
+          <div class="subtitle">
+            <img src="assets/images/subtitle/left-subtitle.svg" alt="" />
+            <h3>Contactez-nous</h3>
+            <img src="assets/images/subtitle/right-subtitle.svg" alt="" />
+          </div>
+          <h1>Nous sommes là pour vous aider</h1>
+          <p>
+            Vous avez des questions, des commentaires ou besoin d'informations
+            supplémentaires ? N'hésitez pas à nous contacter. Notre équipe est à
+            votre disposition pour vous fournir l'assistance dont vous avez
+            besoin.
+          </p>
+        </div>
+
+        <div class="main_contact">
+          <div class="contact_info">
+            <div class="single_contact">
+              <i class="fa-solid fa-location-dot"></i>
+              <h3>adresse</h3>
+              <p>Salé 11000, MAG 2 Rue Dafar 001</p>
+            </div>
+            <div class="single_contact">
+              <i class="fa-solid fa-envelopes-bulk"></i>
+              <h3>mail</h3>
+              <p>msmvoyages@info.com</p>
+            </div>
+            <div class="single_contact">
+              <i class="fa-solid fa-phone"></i>
+              <h3>téléphone</h3>
+              <p>+212 612 345 678</p>
+            </div>
+          </div>
+
+          <div class="contact_form">
+            <form action="#">
+              <h2>contact</h2>
+              <p>
+                Remplissez le formulaire de contact ci-dessous ! Nous sommes
+                impatients de vous aider à planifier votre prochaine aventure.
+              </p>
+              <div class="row_two_input">
+                <div class="single_input">
+                  <label for="lastname">nom</label>
+                  <input
+                    type="text"
+                    id="lastname"
+                    placeholder="Votre Nom"
+                    autofocus
+                  />
+                </div>
+                <div class="single_input">
+                  <label for="phone">téléphone</label>
+                  <input type="tel" id="phone" placeholder="Votre téléphone" />
+                </div>
+              </div>
+              <div class="row_two_input">
+                <div class="single_input">
+                  <label for="email">email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="Votre email"
+                    autofocus
+                  />
+                </div>
+                <div class="single_input">
+                  <label for="subject">sujet</label>
+                  <input type="text" id="subject" placeholder="Sujet" />
+                </div>
+              </div>
+              <div class="row_one_input">
+                <label for="message">message</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="10"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+              <button type="submit">envoyer</button>
+            </form>
+            <img src="assets/images/contact/contact.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.7103683950463!2d-6.776501024680487!3d34.051299917780845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda769413d418fe9%3A0xa719f913e04fc160!2sMSM%20VOYAGES!5e0!3m2!1sfr!2sma!4v1725215801338!5m2!1sfr!2sma"
+      width="600"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+
+    <footer>
+      <div class="container">
+        <div class="main_footer">
+          <div class="row">
+            <h1 class="title">MSM Voyages</h1>
+            <p>
+              MSM Voyages vous offre des expériences de voyage exceptionnelles
+              grâce à notre expertise et à notre service personnalisé. Découvrez
+              des destinations uniques, profitez d'offres exclusives et
+              laissez-nous vous guider dans vos aventures à travers le monde.
+            </p>
+          </div>
+
+          <div class="row">
+            <h1 class="title">Liens rapides</h1>
+            <ul class="fast_link">
+              <a href="#"
+                ><li>
+                  <i class="fa-solid fa-chevron-right"></i> <span>accueil</span>
+                </li></a
+              >
+              <a href="#"
+                ><li>
+                  <i class="fa-solid fa-chevron-right"></i>
+                  <span>a propos</span>
+                </li></a
+              >
+              <a href="#"
+                ><li>
+                  <i class="fa-solid fa-chevron-right"></i>
+                  <span>destination</span>
+                </li></a
+              >
+              <a href="#"
+                ><li>
+                  <i class="fa-solid fa-chevron-right"></i>
+                  <span>gallery</span>
+                </li></a
+              >
+              <a href="#"
+                ><li>
+                  <i class="fa-solid fa-chevron-right"></i> <span>contact</span>
+                </li></a
+              >
+            </ul>
+          </div>
+
+          <div class="row">
+            <h1 class="title">contact</h1>
+            <ul class="contact_list">
+              <li>
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Salé 11000, MAG 2 Rue Dafar 001</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-envelope"></i>
+                <span>msmvoyages@info.com</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-phone-volume"></i>
+                <span>+212 612 345 678</span>
+              </li>
+            </ul>
+            <ul class="contact_link">
+              <a href="#"
+                ><li><i class="fa-brands fa-facebook"></i></li
+              ></a>
+              <a href="#"
+                ><li><i class="fa-brands fa-instagram"></i></li
+              ></a>
+              <a href="#"
+                ><li><i class="fa-brands fa-youtube"></i></li
+              ></a>
+              <a href="#"
+                ><li><i class="fa-brands fa-x-twitter"></i></li
+              ></a>
+            </ul>
+          </div>
+
+          <div class="row">
+            <h1 class="title">gallery</h1>
+            <div class="footer_images">
+              <img src="assets/images/footer/1.jpg" alt="" />
+              <img src="assets/images/footer/2.jpg" alt="" />
+              <img src="assets/images/footer/3.jpg" alt="" />
+              <img src="assets/images/footer/4.jpg" alt="" />
+              <img src="assets/images/footer/5.jpg" alt="" />
+              <img src="assets/images/footer/6.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="bottom_footer">
+          <p>
+            &copy; <span>MSM Voyages</span>, All Right Reserved. Designed By
+            <a href="#">Yassine_ChM</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- link to files js -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
