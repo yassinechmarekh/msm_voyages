@@ -48,6 +48,84 @@ p {
   }
 }
 
+/* start scrollbar */
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-track {
+  border: 7px solid #f9f9f9;
+  box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--dark-color);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--main-color);
+}
+
+.no-scroll{
+  overflow: hidden;
+}
+
+/* end scrollbar */
+
+/* start loader */
+#loader-container{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #f9f9f9;
+  z-index: 1000;
+}
+.loader {
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.loader::after,
+.loader::before {
+  content: '';  
+  box-sizing: border-box;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--main-color);
+  position: absolute;
+  left: 0;
+  top: 0;
+  animation: animloader 2s linear infinite;
+}
+.loader::after {
+  animation-delay: 1s;
+}
+
+@keyframes animloader {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+/* end loader */
+
 /* start header */
 header .top-header {
   padding: 15px 0;
