@@ -30,7 +30,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // loader
 window.addEventListener("load", function () {
-    document.getElementById("loader-container").style.display = "none";
-    document.body.classList.remove("no-scroll");
-  });
-  document.body.classList.add("no-scroll");
+  document.getElementById("loader-container").style.display = "none";
+  document.body.classList.remove("no-scroll");
+});
+document.body.classList.add("no-scroll");
+
+
+// open & close menu
+menu = document.querySelector('header .main_header nav');
+bg_menu = document.querySelector('.bg_menu');
+
+function open_menu(){
+  menu.classList.add("active");
+  bg_menu.classList.add("active");
+}
+
+function close_menu(){
+  menu.classList.remove("active");
+  bg_menu.classList.remove("active");
+}

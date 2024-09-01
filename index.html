@@ -70,20 +70,41 @@
             <h1>MSM voyages</h1>
           </a>
 
+          <div class="bg_menu" onclick="close_menu()"></div>
+
           <nav>
-            <ul>
-              <a href="#"><li class="active">accueil</li></a>
-              <a href="#"><li>a propos</li></a>
-              <a href="#"><li>destination</li></a>
-              <a href="#"><li>gallery</li></a>
-              <a href="#"><li>contact</li></a>
-            </ul>
+            <div class="top_menu">
+              <a href="#" class="logo_menu">
+                <img src="assets/images/logo/logo.png" alt="" />
+                <h1>MSM Voyages</h1>
+              </a>
+
+              <i class="fa-solid fa-xmark" onclick="close_menu()"></i>
+            </div>
+            <div class="menu_phone">
+              <ul>
+                <a href="#"><li class="active">accueil</li></a>
+                <a href="#"><li>a propos</li></a>
+                <a href="#"><li>destination</li></a>
+                <a href="#"><li>gallery</li></a>
+                <a href="#"><li>contact</li></a>
+              </ul>
+              <div class="bottom_menu">
+                <span><i class="fa-solid fa-phone-volume"></i></span>
+                <div class="appeler">
+                  <h4>appeler</h4>
+                  <a href="#">+212 612 345 678</a>
+                </div>
+              </div>
+            </div>
           </nav>
 
           <a href="#" class="phone_btn">
             <i class="fa-solid fa-phone-volume"></i>
             <span>appeler</span>
           </a>
+
+          <i class="fa-solid fa-bars open_menu" onclick="open_menu()"></i>
         </div>
       </div>
     </header>
@@ -444,22 +465,22 @@
           <div class="destinations swiper-wrapper">
             <div class="single_destination swiper-slide">
               <div class="destination_img">
-                <img src="assets/images/destinations/package-1.jpg" alt="" />
+                <img src="assets/images/destinations/tour-de-nord.jpg" alt="" />
               </div>
               <div class="destination_info">
                 <div class="single_info">
                   <i class="fa-solid fa-location-dot"></i>
-                  <span>bali</span>
+                  <span>tour de nord</span>
                 </div>
 
                 <div class="single_info">
                   <i class="fa-solid fa-calendar-days"></i>
-                  <span>3 jours</span>
+                  <span>7 jours</span>
                 </div>
 
                 <div class="single_info">
                   <i class="fa-solid fa-moon"></i>
-                  <span>2 nuits</span>
+                  <span>6 nuits</span>
                 </div>
               </div>
               <div class="content">
@@ -468,19 +489,19 @@
                   <ul>
                     <li>
                       <i class="fa-solid fa-circle-check"></i>
-                      <p>3 Nuits a Kuala Lumpur avec petit déjeuner</p>
+                      <p>Al hoceima - Parasailing - Aqua Park Alpamare</p>
                     </li>
                     <li>
                       <i class="fa-solid fa-circle-check"></i>
-                      <p>4 Nuits a Ubud avec petit déjeuner</p>
+                      <p>Nador - Quemado - Matadero - Sefia</p>
                     </li>
                     <li>
                       <i class="fa-solid fa-circle-check"></i>
-                      <p>2 Nuits a Seminyak avec petit déjeuner</p>
+                      <p>Plongée Sous Marine - Jebha - Mers</p>
                     </li>
                     <li>
                       <i class="fa-solid fa-circle-check"></i>
-                      <p>3 Nuits Uluwatu avec petit déjeuner</p>
+                      <p>Eddar - Playa Monica - Dalia - Oued Laou - Tanger</p>
                     </li>
                   </ul>
                 </div>
@@ -488,8 +509,8 @@
                   <div class="price_content">
                     <p>à partir de :</p>
                     <div class="price">
-                      <h3>19 900 Dhs</h3>
-                      <h5 class="old_price">21 300 Dhs</h5>
+                      <h3>3 199 Dhs</h3>
+                      <h5 class="old_price">3 900 Dhs</h5>
                     </div>
                   </div>
                   <button class="book" onclick="active_modal()">
@@ -502,22 +523,22 @@
 
             <div class="single_destination swiper-slide">
               <div class="destination_img">
-                <img src="assets/images/destinations/package-1.jpg" alt="" />
+                <img src="assets/images/destinations/agadir.jpg" alt="" />
               </div>
               <div class="destination_info">
                 <div class="single_info">
                   <i class="fa-solid fa-location-dot"></i>
-                  <span>bali</span>
+                  <span>agadir</span>
                 </div>
 
                 <div class="single_info">
                   <i class="fa-solid fa-calendar-days"></i>
-                  <span>3 jours</span>
+                  <span>4 jours</span>
                 </div>
 
                 <div class="single_info">
                   <i class="fa-solid fa-moon"></i>
-                  <span>2 nuits</span>
+                  <span>3 nuits</span>
                 </div>
               </div>
               <div class="content">
@@ -526,19 +547,19 @@
                   <ul>
                     <li>
                       <i class="fa-solid fa-circle-check"></i>
-                      <p>3 Nuits a Kuala Lumpur avec petit déjeuner</p>
+                      <p>Essaouira - Agadir - Timlalin Tamri</p>
                     </li>
                     <li>
                       <i class="fa-solid fa-circle-check"></i>
-                      <p>4 Nuits a Ubud avec petit déjeuner</p>
+                      <p>Taghazout / Equitation / Karting</p>
                     </li>
                     <li>
                       <i class="fa-solid fa-circle-check"></i>
-                      <p>2 Nuits a Seminyak avec petit déjeuner</p>
+                      <p>Quad / Balade Bateaux</p>
                     </li>
                     <li>
                       <i class="fa-solid fa-circle-check"></i>
-                      <p>3 Nuits Uluwatu avec petit déjeuner</p>
+                      <p>Dates : 19-21 juillet, 26-28 juillet.</p>
                     </li>
                   </ul>
                 </div>
@@ -546,8 +567,8 @@
                   <div class="price_content">
                     <p>à partir de :</p>
                     <div class="price">
-                      <h3>19 900 Dhs</h3>
-                      <h5 class="old_price">21 300 Dhs</h5>
+                      <h3>1 490 Dhs</h3>
+                      <h5 class="old_price">1 990 Dhs</h5>
                     </div>
                   </div>
                   <button class="book" onclick="active_modal()">
@@ -560,22 +581,22 @@
 
             <div class="single_destination swiper-slide">
               <div class="destination_img">
-                <img src="assets/images/destinations/package-1.jpg" alt="" />
+                <img src="assets/images/destinations/intanbul.jpg" alt="" />
               </div>
               <div class="destination_info">
                 <div class="single_info">
                   <i class="fa-solid fa-location-dot"></i>
-                  <span>bali</span>
+                  <span>Istanboul</span>
                 </div>
 
                 <div class="single_info">
                   <i class="fa-solid fa-calendar-days"></i>
-                  <span>3 jours</span>
+                  <span>8 jours</span>
                 </div>
 
                 <div class="single_info">
                   <i class="fa-solid fa-moon"></i>
-                  <span>2 nuits</span>
+                  <span>7 nuits</span>
                 </div>
               </div>
               <div class="content">
@@ -584,19 +605,19 @@
                   <ul>
                     <li>
                       <i class="fa-solid fa-circle-check"></i>
-                      <p>3 Nuits a Kuala Lumpur avec petit déjeuner</p>
+                      <p>Guide Touristique arabophone</p>
                     </li>
                     <li>
                       <i class="fa-solid fa-circle-check"></i>
-                      <p>4 Nuits a Ubud avec petit déjeuner</p>
+                      <p>Départ à l’aéroport Med V de Casablanca</p>
                     </li>
                     <li>
                       <i class="fa-solid fa-circle-check"></i>
-                      <p>2 Nuits a Seminyak avec petit déjeuner</p>
+                      <p>Vol A/R avec La ram - Turkish Airlines - Airarabia</p>
                     </li>
                     <li>
                       <i class="fa-solid fa-circle-check"></i>
-                      <p>3 Nuits Uluwatu avec petit déjeuner</p>
+                      <p>11 excursions extra - dans 3 jours</p>
                     </li>
                   </ul>
                 </div>
@@ -604,8 +625,8 @@
                   <div class="price_content">
                     <p>à partir de :</p>
                     <div class="price">
-                      <h3>19 900 Dhs</h3>
-                      <h5 class="old_price">21 300 Dhs</h5>
+                      <h3>9 980 Dhs</h3>
+                      <h5 class="old_price">10 900 Dhs</h5>
                     </div>
                   </div>
                   <button class="book" onclick="active_modal()">
@@ -618,12 +639,12 @@
 
             <div class="single_destination swiper-slide">
               <div class="destination_img">
-                <img src="assets/images/destinations/package-1.jpg" alt="" />
+                <img src="assets/images/destinations/saidia.jpg" alt="" />
               </div>
               <div class="destination_info">
                 <div class="single_info">
                   <i class="fa-solid fa-location-dot"></i>
-                  <span>bali</span>
+                  <span>saidia</span>
                 </div>
 
                 <div class="single_info">
@@ -642,19 +663,19 @@
                   <ul>
                     <li>
                       <i class="fa-solid fa-circle-check"></i>
-                      <p>3 Nuits a Kuala Lumpur avec petit déjeuner</p>
+                      <p>Saïdia - Carablanca - Hoceima</p>
                     </li>
                     <li>
                       <i class="fa-solid fa-circle-check"></i>
-                      <p>4 Nuits a Ubud avec petit déjeuner</p>
+                      <p>Nador - Parasailing Balade Bateaux</p>
                     </li>
                     <li>
                       <i class="fa-solid fa-circle-check"></i>
-                      <p>2 Nuits a Seminyak avec petit déjeuner</p>
+                      <p>Plongée - Soirée</p>
                     </li>
                     <li>
                       <i class="fa-solid fa-circle-check"></i>
-                      <p>3 Nuits Uluwatu avec petit déjeuner</p>
+                      <p>Dates : 19-21 juillet, 26-28 juillet.</p>
                     </li>
                   </ul>
                 </div>
@@ -662,8 +683,8 @@
                   <div class="price_content">
                     <p>à partir de :</p>
                     <div class="price">
-                      <h3>19 900 Dhs</h3>
-                      <h5 class="old_price">21 300 Dhs</h5>
+                      <h3>1 390 Dhs</h3>
+                      <h5 class="old_price">1 750 Dhs</h5>
                     </div>
                   </div>
                   <button class="book" onclick="active_modal()">
@@ -819,10 +840,12 @@
             <h1 class="title">contact</h1>
             <ul class="contact_list">
               <li>
-                <i class="fa-solid fa-location-dot"></i> <span>Salé 11000, MAG 2 Rue Dafar 001</span>
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Salé 11000, MAG 2 Rue Dafar 001</span>
               </li>
               <li>
-                <i class="fa-solid fa-envelope"></i> <span>msmvoyages@info.com</span>
+                <i class="fa-solid fa-envelope"></i>
+                <span>msmvoyages@info.com</span>
               </li>
               <li>
                 <i class="fa-solid fa-phone-volume"></i>
