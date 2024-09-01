@@ -383,11 +383,11 @@ header .main_header .phone_btn:hover {
   overflow: hidden;
 }
 
-.populaire_sec .destinations {
+.destinations {
   margin: 20px 0;
 }
 
-.populaire_sec .destinations .single_destination {
+.destinations .single_destination {
   width: 33%;
   background-color: #fff;
   border: 1px solid var(--border-color);
@@ -395,30 +395,26 @@ header .main_header .phone_btn:hover {
   overflow: hidden;
 }
 
-.populaire_sec .destinations .single_destination .destination_img {
+.destinations .single_destination .destination_img {
   width: 100%;
   overflow: hidden;
 }
 
-.populaire_sec .destinations .single_destination .destination_img img {
+.destinations .single_destination .destination_img img {
   width: 100%;
   transform: scale(1.05);
   transition: 0.3s ease-in-out;
 }
 
-.populaire_sec .destinations .single_destination .destination_img img:hover {
+.destinations .single_destination .destination_img img:hover {
   transform: scale(1.1);
 }
 
-.populaire_sec .destinations .single_destination .destination_info {
+.destinations .single_destination .destination_info {
   display: flex;
 }
 
-.populaire_sec
-  .destinations
-  .single_destination
-  .destination_info
-  .single_info {
+.destinations .single_destination .destination_info .single_info {
   width: calc(100% / 3);
   padding: 10px 0;
   display: flex;
@@ -428,88 +424,62 @@ header .main_header .phone_btn:hover {
   border-bottom: 1px solid var(--border-color);
 }
 
-.populaire_sec
-  .destinations
-  .single_destination
-  .destination_info
-  .single_info:nth-child(2) {
+.destinations .single_destination .destination_info .single_info:nth-child(2) {
   border-left: 1px solid var(--border-color);
   border-right: 1px solid var(--border-color);
 }
 
-.populaire_sec
-  .destinations
-  .single_destination
-  .destination_info
-  .single_info
-  i {
+.destinations .single_destination .destination_info .single_info i {
   font-size: 16px;
   color: var(--main-color);
 }
 
-.populaire_sec
-  .destinations
-  .single_destination
-  .destination_info
-  .single_info
-  span {
+.destinations .single_destination .destination_info .single_info span {
   font-size: 14px;
   color: var(--parag-color);
   text-transform: capitalize;
 }
 
-.populaire_sec .destinations .single_destination .content {
+.destinations .single_destination .content {
   padding: 15px 20px;
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
 
-.populaire_sec .destinations .single_destination .content .text {
+.destinations .single_destination .content .text {
   display: flex;
   flex-direction: column;
   gap: 3px;
   font-size: 14px;
 }
 
-.populaire_sec
-  .destinations
-  .single_destination
-  .content
-  .text
-  p::first-letter {
+.destinations .single_destination .content .text p::first-letter {
   text-transform: capitalize;
 }
 
-.populaire_sec .destinations .single_destination .content .text ul li {
+.destinations .single_destination .content .text ul li {
   display: flex;
   gap: 3px;
   align-items: center;
   padding-left: 5px;
 }
 
-.populaire_sec .destinations .single_destination .content .text ul li i {
+.destinations .single_destination .content .text ul li i {
   color: var(--main-color);
 }
 
-.populaire_sec .destinations .single_destination .content .bottom_card {
+.destinations .single_destination .content .bottom_card {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.populaire_sec
-  .destinations
-  .single_destination
-  .content
-  .bottom_card
-  .price_content
-  p {
+.destinations .single_destination .content .bottom_card .price_content p {
   font-size: 14px;
 }
 
-.populaire_sec
-  .destinations
+.destinations
   .single_destination
   .content
   .bottom_card
@@ -518,20 +488,13 @@ header .main_header .phone_btn:hover {
   text-transform: capitalize;
 }
 
-.populaire_sec
-  .destinations
-  .single_destination
-  .content
-  .bottom_card
-  .price_content
-  .price {
+.destinations .single_destination .content .bottom_card .price_content .price {
   display: flex;
   gap: 5px;
   align-items: flex-end;
 }
 
-.populaire_sec
-  .destinations
+.destinations
   .single_destination
   .content
   .bottom_card
@@ -543,8 +506,7 @@ header .main_header .phone_btn:hover {
   color: var(--main-color);
 }
 
-.populaire_sec
-  .destinations
+.destinations
   .single_destination
   .content
   .bottom_card
@@ -557,7 +519,7 @@ header .main_header .phone_btn:hover {
   text-decoration: line-through;
 }
 
-.populaire_sec .destinations .single_destination .content .bottom_card .book {
+.destinations .single_destination .content .bottom_card .book {
   padding: 10px 15px;
   display: flex;
   gap: 5px;
@@ -573,7 +535,7 @@ header .main_header .phone_btn:hover {
   transition: 0.3s ease-in-out;
 }
 
-.populaire_sec .destinations .single_destination .content .bottom_card .book i {
+.destinations .single_destination .content .bottom_card .book i {
   font-size: 16px;
 }
 
@@ -846,3 +808,15 @@ header .main_header .phone_btn:hover {
   text-transform: capitalize;
 }
 /* end banner_sec */
+
+/* start offre_sec */
+
+.offre_sec {
+  padding: 40px 0;
+}
+
+.offre_sec .offre-swp {
+  overflow: hidden;
+}
+
+/* end offre_sec */
