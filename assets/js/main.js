@@ -49,3 +49,18 @@ function close_menu(){
   menu.classList.remove("active");
   bg_menu.classList.remove("active");
 }
+
+
+// Scroll to top & show or hide the button
+let back_to_top = document.querySelector(".back_to_top");
+
+function toggleBackToTopButton() {
+  if (window.scrollY === 0) {
+    back_to_top.style.display = "none";
+  } else {
+    back_to_top.style.display = "flex";
+  }
+}
+
+window.addEventListener("scroll", toggleBackToTopButton);
+toggleBackToTopButton();
