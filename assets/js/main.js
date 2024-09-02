@@ -35,21 +35,19 @@ window.addEventListener("load", function () {
 });
 document.body.classList.add("no-scroll");
 
-
 // open & close menu
-menu = document.querySelector('header .main_header nav');
-bg_menu = document.querySelector('.bg_menu');
+menu = document.querySelector("header .main_header nav");
+bg_menu = document.querySelector(".bg_menu");
 
-function open_menu(){
+function open_menu() {
   menu.classList.add("active");
   bg_menu.classList.add("active");
 }
 
-function close_menu(){
+function close_menu() {
   menu.classList.remove("active");
   bg_menu.classList.remove("active");
 }
-
 
 // Scroll to top & show or hide the button
 let back_to_top = document.querySelector(".back_to_top");
@@ -62,5 +60,13 @@ function toggleBackToTopButton() {
   }
 }
 
-window.addEventListener("scroll", toggleBackToTopButton);
 toggleBackToTopButton();
+
+window.addEventListener("scroll", toggleBackToTopButton);
+
+back_to_top.addEventListener("click", function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});

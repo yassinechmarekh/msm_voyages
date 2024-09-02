@@ -21,6 +21,7 @@
   text-decoration: none;
   list-style: none;
   font-family: var(--global-font);
+  scroll-behavior: smooth;
 }
 
 body {
