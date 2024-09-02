@@ -2105,7 +2105,7 @@ iframe {
   background-image: url("../images/about/about-banner.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   margin-bottom: 100px;
   position: relative;
 }
