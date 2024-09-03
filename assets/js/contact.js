@@ -23,14 +23,16 @@ function sendEmail(){
             Swal.fire({
                 title: "Message Envoyé !",
                 text: "Votre message a été envoyé avec succès. Merci de nous avoir contactés !",
-                icon: "success"
+                icon: "success",
+                confirmButtonColor: "#3880e5"
             });              
         }else{
             Swal.fire({
                 icon: "error",
                 title: "Oops...",
                 text: "Une erreur a été produite lors de l'envoie du message !",
-                footer: '<a href="contact.html">Pourquoi ai-je ce problème?</a>'
+                footer: '<a href="contact.html">Pourquoi ai-je ce problème?</a>',
+                confirmButtonColor: "#3880e5"
             });              
         }
       }

@@ -46,7 +46,8 @@ function bookDestination(){
             Swal.fire({
                 title: "Réservation avec succès!",
                 text: "Merci de choisir MSM Voyages! Vous receverez un appel de confirmation plus tôt possible.",
-                icon: "success"
+                icon: "success",
+                confirmButtonColor: "#3880e5"
             });
             close_modal();
         }else{
@@ -54,7 +55,8 @@ function bookDestination(){
                 icon: "error",
                 title: "Oops...",
                 text: "Une erreur a été produite lors de l'envoie du formulaire !",
-                footer: '<a href="contact.html">Pourquoi ai-je ce problème?</a>'
+                footer: '<a href="contact.html">Pourquoi ai-je ce problème?</a>',
+                confirmButtonColor: "#3880e5"
             });              
         }
       }
