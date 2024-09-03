@@ -81,7 +81,9 @@
               <ul>
                 <a href="index.html"><li>accueil</li></a>
                 <a href="about.html"><li>a propos</li></a>
-                <a href="destinations.html"><li class="active">destination</li></a>
+                <a href="destinations.html"
+                  ><li class="active">destination</li></a
+                >
                 <a href="gallery.html"><li>gallery</li></a>
                 <a href="contact.html"><li>contact</li></a>
               </ul>
@@ -660,7 +662,7 @@
     <section class="modal_sec">
       <div class="background_modal" onclick="close_modal()"></div>
       <div class="modal">
-        <form action="">
+        <form action="#" id="booking_form">
           <div class="top_modal">
             <h1>réservation</h1>
             <i onclick="close_modal()" class="fa-solid fa-xmark"></i>
@@ -672,13 +674,21 @@
                 <input
                   type="text"
                   id="lastname"
+                  name="lastname"
                   placeholder="Votre Nom"
                   autofocus
+                  required
                 />
               </div>
               <div class="single_input">
                 <label for="firstname">prénom</label>
-                <input type="text" id="firstname" placeholder="Votre prénom" />
+                <input
+                  type="text"
+                  id="firstname"
+                  name="firstname"
+                  placeholder="Votre prénom"
+                  required
+                />
               </div>
             </div>
             <div class="row_two_input">
@@ -687,7 +697,9 @@
                 <input
                   type="tel"
                   id="phone"
+                  name="phone"
                   placeholder="Votre numéro de téléphone"
+                  required
                 />
               </div>
               <div class="single_input">
@@ -695,7 +707,9 @@
                 <input
                   type="email"
                   id="email"
+                  name="email"
                   placeholder="Votre adresse mail"
+                  required
                 />
               </div>
             </div>
@@ -705,22 +719,40 @@
                 <input
                   type="text"
                   id="nationality"
+                  name="nationality"
                   placeholder="Votre Nationnalité"
+                  required
                 />
               </div>
               <div class="single_input">
                 <label>nombre de place à réserver</label>
                 <div class="radio_btn">
                   <div class="single_radio">
-                    <input type="radio" id="one" name="place_number" checked />
+                    <input
+                      type="radio"
+                      id="one"
+                      name="place_number"
+                      value="1"
+                      checked
+                    />
                     <label for="one">1 place</label>
                   </div>
                   <div class="single_radio">
-                    <input type="radio" id="two" name="place_number" />
+                    <input
+                      type="radio"
+                      id="two"
+                      name="place_number"
+                      value="2"
+                    />
                     <label for="two">2 places</label>
                   </div>
                   <div class="single_radio">
-                    <input type="radio" id="plus" name="place_number" />
+                    <input
+                      type="radio"
+                      id="plus"
+                      name="place_number"
+                      value="plus"
+                    />
                     <label for="plus">plus</label>
                     <input
                       type="number"
@@ -733,9 +765,16 @@
             </div>
             <div class="row_one_input">
               <label for="destination">choisissez votre destination</label>
-              <select name="destination" id="destination">
+              <select name="destination" id="destination" required>
                 <option value="">selectionner votre destination</option>
                 <option value="bali">bali</option>
+                <option value="tour de nord">tour de nord</option>
+                <option value="agadir">agadir</option>
+                <option value="istanboul">istanboul</option>
+                <option value="taghazout">taghazout</option>
+                <option value="tour de sud">tour de sud</option>
+                <option value="jebha">jebha</option>
+                <option value="saidia">saidia</option>
               </select>
             </div>
           </div>
@@ -817,7 +856,9 @@
               <a href="https://www.instagram.com/msm_voyages" target="_blank"
                 ><li><i class="fa-brands fa-instagram"></i></li
               ></a>
-              <a href="https://www.youtube.com/@msmvoyages/videos" target="_blank"
+              <a
+                href="https://www.youtube.com/@msmvoyages/videos"
+                target="_blank"
                 ><li><i class="fa-brands fa-youtube"></i></li
               ></a>
               <a href="#" target="_blank"
@@ -841,7 +882,11 @@
         <div class="bottom_footer">
           <p>
             &copy; <span>MSM Voyages</span>, All Right Reserved. Designed By
-            <a href="https://www.linkedin.com/in/yassine-chmarekh/" target="_blank">Yassine_ChM</a>
+            <a
+              href="https://www.linkedin.com/in/yassine-chmarekh/"
+              target="_blank"
+              >Yassine_ChM</a
+            >
           </p>
         </div>
       </div>
@@ -850,6 +895,9 @@
     <div class="back_to_top"><i class="fa-solid fa-chevron-up"></i></div>
 
     <!-- link to files js -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="assets/js/booking.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>

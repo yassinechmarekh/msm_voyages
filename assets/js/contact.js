@@ -30,7 +30,7 @@ function sendEmail(){
                 icon: "error",
                 title: "Oops...",
                 text: "Une erreur a été produite lors de l'envoie du message !",
-                footer: '<a href="#">Pourquoi ai-je ce problème?</a>'
+                footer: '<a href="contact.html">Pourquoi ai-je ce problème?</a>'
             });              
         }
       }
