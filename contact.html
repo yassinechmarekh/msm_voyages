@@ -161,17 +161,19 @@
               </p>
               <div class="row_two_input">
                 <div class="single_input">
-                  <label for="lastname">nom</label>
+                  <label for="name">nom</label>
                   <input
                     type="text"
-                    id="lastname"
+                    id="name"
+                    name="name"
                     placeholder="Votre Nom"
                     autofocus
+                    required
                   />
                 </div>
                 <div class="single_input">
                   <label for="phone">téléphone</label>
-                  <input type="tel" id="phone" placeholder="Votre téléphone" />
+                  <input type="tel" id="phone" name="phone" placeholder="Votre téléphone" required/>
                 </div>
               </div>
               <div class="row_two_input">
@@ -180,13 +182,14 @@
                   <input
                     type="email"
                     id="email"
+                    name="email"
                     placeholder="Votre email"
-                    autofocus
+                    required
                   />
                 </div>
                 <div class="single_input">
                   <label for="subject">sujet</label>
-                  <input type="text" id="subject" placeholder="Sujet" />
+                  <input type="text" id="subject" name="subject" placeholder="Sujet" required/>
                 </div>
               </div>
               <div class="row_one_input">
@@ -197,6 +200,7 @@
                   cols="30"
                   rows="10"
                   placeholder="Message"
+                  required
                 ></textarea>
               </div>
               <button type="submit">envoyer</button>
@@ -287,7 +291,9 @@
               <a href="https://www.instagram.com/msm_voyages" target="_blank"
                 ><li><i class="fa-brands fa-instagram"></i></li
               ></a>
-              <a href="https://www.youtube.com/@msmvoyages/videos" target="_blank"
+              <a
+                href="https://www.youtube.com/@msmvoyages/videos"
+                target="_blank"
                 ><li><i class="fa-brands fa-youtube"></i></li
               ></a>
               <a href="#" target="_blank"
@@ -311,7 +317,11 @@
         <div class="bottom_footer">
           <p>
             &copy; <span>MSM Voyages</span>, All Right Reserved. Designed By
-            <a href="https://www.linkedin.com/in/yassine-chmarekh/" target="_blank">Yassine_ChM</a>
+            <a
+              href="https://www.linkedin.com/in/yassine-chmarekh/"
+              target="_blank"
+              >Yassine_ChM</a
+            >
           </p>
         </div>
       </div>
@@ -320,6 +330,9 @@
     <div class="back_to_top"><i class="fa-solid fa-chevron-up"></i></div>
 
     <!-- link to files js -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="assets/js/contact.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>
